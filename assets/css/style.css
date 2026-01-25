@@ -378,6 +378,27 @@ footer{
                 .menu{
                     display: block;
                 }
+                .offcanvas-body{
+                    ul{
+                        li{
+                            padding-left: 10px;
+                            &:hover{
+                                color: var(--primary-color);
+                                background-color: var(--sec-bg-color);
+                                border-radius: 10px;
+                            }
+                        }
+                    }
+                }
+                form{
+                    input{
+                        &:focus{
+                            box-shadow: none !important;
+                            /* border: none !important; */
+                            border: 2px solid var(--primary-color) !important;
+                        }
+                    }
+                }
         }
     }
     main{
@@ -406,6 +427,11 @@ footer{
                         }
                         .popular-games {
                             justify-content: center;
+                                .game{
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
                         }
                     }
                     .library{
@@ -414,8 +440,9 @@ footer{
                             margin-bottom: 40px;
                         }
                         .librar-container {
+                            justify-content: center;
                             .library-game-title{
-                                width: 50%;
+                                width: 100%;
                                 flex-direction: column;
                                 align-items: center;
                                 justify-content: center;
@@ -430,6 +457,7 @@ footer{
                             }
                             .library-game-details {
                                 gap: 20px;
+                                justify-content: center;
                                     .data-added, & .hours-played, & .currently {
                                         h2 {
                                             font-size: 15px;
