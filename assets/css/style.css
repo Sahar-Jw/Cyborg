@@ -428,6 +428,7 @@ footer{
                         .popular-games {
                             justify-content: center;
                                 .game{
+                                    width: 100%;
                                     img{
                                         width: 100%;
                                     }
